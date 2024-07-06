@@ -1,12 +1,11 @@
 import Header from "../header/Header.js";
 
-const MainPage =() => {
+const Dashboard =() => {
     return (
         <>
             <Header />
-            <p>Main Page</p>
+            <p>Wellcome to Dashboard</p>
         </>
     );
 }
-
-export default MainPage;
+export default Dashboard;

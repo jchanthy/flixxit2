@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Login from './components/login/LogIn.js';
-import MainPage from './components/Layouts/MainPage.js';
-import SignUp from './components/SignUp/SignUp.js';
-import Dashboard from './components/Dashboard/Dashbaord.js';
+import Login from './components/login/Login.js';
+import Signup from './components/signup/Signup.js';
+import Dashboard from './components/dashboard/Dashbaord.js';
+import Masterpage from './components/layouts/Masterpage.js';
 
 
 function App() {
@@ -11,9 +11,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<MainPage />} />
+          <Route path='/' element={<Masterpage />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signup" element={<Signup />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </BrowserRouter>

@@ -1,9 +1,10 @@
-// import Header from "../header/Header.js";
 import { Link } from "react-router-dom";
+// import Header from "../header/Header.js"
 
 const Login =() => {
     return (
         <>
+            {/* <Header /> */}
             {/* Login Block */}
             <div className="hero bg-base-200 min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
@@ -31,7 +32,7 @@ const Login =() => {
                                 </label>
                                 <input type="password" placeholder="password" className="input input-bordered" required />
                                 <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                    <Link to="/" className="label-text-alt link link-hover">Forgot password?</Link>
                                 </label>
                             </div>
                             <div className="form-control mt-6">
@@ -43,8 +44,7 @@ const Login =() => {
                 </div>
             </div>
         </>
-      
     );
-  }
+}
 
-  export default Login;
+export default Login;

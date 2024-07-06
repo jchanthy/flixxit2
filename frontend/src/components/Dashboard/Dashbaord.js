@@ -4,7 +4,7 @@ const Dashboard =() => {
     return (
         <>
             <Header />
-            <p>Wellcome to Dashboard</p>
+            <p>Welcome to Dashboard</p>
         </>
     );
 }

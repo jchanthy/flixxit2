@@ -1,12 +1,11 @@
 import Header from "../header/Header.js";
 
-const MainPage =() => {
+const masterpage =() => {
     return (
         <>
             <Header />
-            <p>Main Page</p>
+            <p>Welcome to Master page</p>
         </>
     );
 }
-
-export default MainPage;
+export default masterpage;

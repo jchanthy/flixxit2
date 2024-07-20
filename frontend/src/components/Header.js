@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 
 const Header =() => {
+    const isLogin = false;
     return(
         <>
         <div className="navbar bg-base-100">
@@ -26,15 +27,15 @@ const Header =() => {
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><Link to='/dashboard'>Dashboard</Link></li>
-                        <li><a href='/'>About Us</a></li>
+                        <li><Link to={'/about-us'}>About Us</Link></li>
                     </ul>
                 </div>
                 <Link to='/' className="btn btn-ghost text-xl">Flixxit App</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                <li><Link to='/dashboard'>Dashboard</Link></li>
-                <li><Link to='/'>About Us</Link></li>
+                {isLogin ? <li><Link to='/dashboard'>Dashboard</Link></li> :""}
+                <li><Link to='/about-us'>About Us</Link></li>
                 </ul>
             </div>
             <div className="navbar-end" data-tip="warning">
@@ -55,6 +56,7 @@ const Header =() => {
             clipRule="evenodd" />
         </svg>
         </label>
+        
         </>
         
     )
